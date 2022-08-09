@@ -22,6 +22,10 @@ body{
   margin: 0 auto;
 }
 
+.nav .logo a {
+  font-size: 3rem;
+  color: darkcyan;
+}
 
 .nav {
   position: fixed;
@@ -44,6 +48,38 @@ body{
   display: flex;
   list-style-type: none;
   align-items: center;
+  justify-content: center;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  padding: .7rem 1.5rem;
+  transition: all .3s ease-in-out;
+}
+
+.nav.active {
+  background-color: white;
+  box-shadow: 0 .2rem 1rem rgb(0, 0, 0, 0.3);
+}
+
+.nav.active a {
+  color: #222;
+}
+
+.nav.active .container {
+  padding: 1rem 0;
+}
+
+.nav a.current {
+  color: palevioletred;
+}
+
+.nav a:hover {
+  color: darkcyan;
 }
 
 .hero {
@@ -99,4 +135,24 @@ section p {
   margin-bottom: 2rem;
   letter-spacing: .07rem;
   line-height: 3rem;
+}
+
+.icons {
+  margin-top: 6rem;
+  display: flex;
+  font-size: 15rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons .icon {
+  background-color: white;
+  color: darkcyan;
+  margin: 0 4rem;
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: circle();
 }
